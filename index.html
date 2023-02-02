@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Connection CSS-->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Police d'écriture -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Titre de la page -->
+    <title>Néroli PRAK : Portrait Chinois</title>
+  </head>
+
+  <body>
+    <!-- Navigateur contenant divers liens internes vers les 7 mots en position sticky-->
+    <nav class="navbar">
+      <a class="nav-name" href="#home-page"><strong>Néroli Prak</strong></a>
+      <div class="liens-internes">
+        <button class="nav-button">
+          <a href="#div-1">Couleur</a>
+        </button>
+        <button class="nav-button">
+          <a href="#div-2">Compositeur</a>
+        </button>
+        <button class="nav-button">
+          <a href="#div-3">Moment</a>
+        </button>
+        <button class="nav-button">
+          <a href="#div-4">Sens</a>
+        </button>
+        <button class="nav-button">
+          <a href="#div-5">Instrument</a>
+        </button>
+        <button class="nav-button">
+          <a href="#div-6">Proverbe</a>
+        </button>
+        <button class="nav-button">
+          <a href="#div-7">Défaut</a>
+        </button>
+      </div>
+      <!-- Changer la couleur entre le mode nuit et jour -->
+      <span class="change-color">
+        <div class="switch switch-night"></div>
+        <div class="text-change-color light">Nuit</div>
+      </span>
+    </nav>
+    <!-- Page d'accueil avec le titre et les carrés -->
+    <main class="home-page" id="home-page">
+      <div class="title-portrait">
+        <!-- Lettre du titre avec néon -->
+        <div class="flottant">
+          <strong>
+            <span class="red-neon" style="color: #ff6161">P</span
+            ><span class="white-neon-jour">o</span
+            ><span class="white-neon-jour">r</span
+            ><span class="white-neon-jour">t</span
+            ><span class="white-neon-jour">r</span
+            ><span class="white-neon-jour">a</span
+            ><span class="white-neon-jour">i</span
+            ><span class="white-neon-jour">t</span>
+            <br>
+            <span class="red-neon" style="color: #ff6161">C</span
+            ><span class="white-neon-jour">h</span
+            ><span class="white-neon-jour">i</span
+            ><span class="white-neon-jour">n</span
+            ><span class="white-neon-jour">o</span
+            ><span class="white-neon-jour">i</span
+            ><span class="white-neon-jour">s</span>
+            <br>
+            <span class="subtitle">Si j'étais... je serais...</span>
+          </strong>
+        </div>
+        <!-- Pour la fluidité inférieur à 1227 px-->
+        <div class="square-fluide-768">
+          <div class="colonne-fluide">
+            <div class="forme-square square-1"></div>
+            <div class="forme-square square-2"></div>
+          </div>
+          <div class="colonne-fluide">
+            <div class="forme-square square-3"></div>
+            <div class="forme-square square-4"></div>
+            <div class="forme-square square-5"></div>
+            <!-- Flèche pour descendre à la div suivante -->
+            <a href="#div-1"
+              ><img
+                class="flottant-arrow down-arrow-fluide"
+                src="./images/up-arrow.png"
+                alt=""
+            /></a>
+          </div>
+          <div class="colonne-fluide">
+            <div class="forme-square square-6"></div>
+            <div class="forme-square square-7"></div>
+          </div>
+        </div>
+        <!-- Fin de la fluidité inférieur à 1227 px-->
+        <div class="separation-neon"></div>
+      </div>
+      <!-- Pour la fluidité au delà de 1227 px-->
+      <div class="squares">
+        <div class="square-colonne colonne-1">
+          <div class="forme-square square-1"></div>
+          <!-- Flèche pour descendre à la div suivante -->
+          <a href="#div-1"
+            ><img
+              class="flottant-arrow down-arrow"
+              src="./images/up-arrow.png"
+              alt=""
+          /></a>
+        </div>
+        <div class="square-colonne colonne-2">
+          <div class="forme-square square-2"></div>
+          <div class="forme-square square-3"></div>
+          <div class="forme-square square-4"></div>
+        </div>
+        <div class="square-colonne colonne-3">
+          <div class="subtitle-explain">
+            Ces <strong>7 fragments</strong> de ma personnalité fait de qui je
+            suis aujourd'hui.
+          </div>
+          <div class="forme-square square-5"></div>
+          <div class="forme-square square-6"></div>
+          <div class="forme-square square-7"></div>
+        </div>
+        <!-- Fin de la fluidité au delà de 1227 px -->
+        <div class="separation-neon"></div>
+      </div>
+    </main>
+    <!-- Les différentes phrases du portrait chinois (7) -->
+    <div class="liste-analogies" id="portrait-analogie"></div>
+
+    <!-- Création d'un formulaire interactif -->
+    <div class="create-form">
+      <div class="formulaire-1">
+        <h1>Formulaire</h1>
+        Vous souhaitez créer votre propre Portrait Chinois personnalisé ? <br>
+        Remplissez dès maintenant ce formulaire ci-dessous.<br>Une case
+        apparaîtra en bas avec votre portrait chinois.<br><br>
+        Lorsque vous serez satisfait, vous pourrez envoyer votre suggestion à un
+        service web <br>(Pour en savoir plus regarder les mentions légales)
+        <br><br><br>
+        <form action="">
+          <button class="bouton-formulaire">Créer dès maintenant !</button>
+          <div class="creation-portrait blur">
+            <br><br>
+            <!-- Champs de formulaire -->
+            <span class="titre-portrait-formulaire"
+              ><strong>Votre Portrait-Chinois :</strong><br><br
+            ></span>
+            <label for="analogies">Si j'étais...*</label><br>
+            <input
+              required
+              type="text"
+              id="analogies"
+              class="input-formulaire"
+            ><br><br>
+            <label for="valeurAnalogie">Je serais...*</label><br>
+            <input
+              required
+              type="text"
+              id="valeurAnalogie"
+              class="input-formulaire"
+            ><br><br>
+            <label for="explication">Parce que...*</label><br>
+            <input
+              required
+              type="text"
+              id="explication"
+              class="input-formulaire input-explication"
+            ><br><br>
+            <label for="image">Déposer l'URL de votre image.*</label><br>
+            <input
+              required
+              type="url"
+              id="image"
+              class="input-formulaire"
+            ><br><br>
+
+            <br><br>
+            <span class="titre-info-perso"
+              ><strong>Informations personnelles</strong></span
+            ><br><br>
+            <label for="courriel">Adresse email*</label><br><input
+              required
+              type="email"
+              id="courriel"
+              class="input-formulaire"
+            >
+            <br><br>
+            <label for="prenom">Prénom</label><br><input
+              type="text"
+              id="prenom"
+              class="input-formulaire"
+            >
+            <br><br>
+            <label for="nom">Nom</label><br><input
+              type="text"
+              id="nom"
+              class="input-formulaire"
+            >
+            <br><br>
+
+            <input required type="button" value="Envoyer" id="envoyer" >
+          </div>
+
+          <!-- Message d'erreur si l'envoi a échoué -->
+          <div class="erreur"></div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Création d'un bloc où l'utilisateur pourra voir son portrait chinois après avoir insérer ces mots dans le formulaire -->
+    <div class="text-formulaire"></div>
+
+    <!-- Les mentions légales -->
+    <footer>
+      <button class="apparaitre-mention">
+        Pour en savoir plus sur les mentions légales
+      </button>
+
+      <div class="popup popup-invisible">
+        <div class="mentions">
+          <div class="haut-popup">
+            <span class="cross">X</span> Mentions légales
+          </div>
+          <ul class="liste-mention">
+            <ul>
+              Photo 1 :
+              <a
+                class="lien-mention"
+                href="https://unsplash.com/fr/@steve_j?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                >Steve Johnson</a
+              >
+              sur
+              <a href="https://unsplash.com/fr">Unsplash</a
+              >: Bleu<br>
+            </ul>
+            <ul>
+              Photo 2 :
+              <a
+                class="lien-mention"
+                href="https://commons.wikimedia.org/wiki/File:Ludovico_Einaudi_in_Tehran_07.jpg"
+                >Meghdad Madadi</a
+              >
+              : Ludovico Einaudi
+            </ul>
+            <ul>
+              Photo 3 :
+              <a
+                class="lien-mention"
+                href="https://www.pexels.com/fr-fr/photo/ciel-nuit-sombre-soir-5704127/"
+                >Junior Cazangi :</a
+              >
+              Nuit
+            </ul>
+            <ul>
+              Photo 4 :
+              <a
+                class="lien-mention"
+                href="https://www.flickr.com/photos/24072886@N03/22047997545"
+                >Peter lowe :</a
+              >
+              Sens
+            </ul>
+            <ul>
+              Photo 5 :
+              <a
+                class="lien-mention"
+                href="https://www.pexels.com/fr-fr/photo/personne-main-jouer-porter-7095505/"
+                >Photo de cottonbro studio : </a
+              >Violon
+            </ul>
+            <ul>
+              Photo 6 :
+              <a
+                class="lien-mention"
+                href="https://www.flickr.com/photos/bmnstanislas/15608757812"
+                >Bibliothèques de Nancy :</a
+              >
+              Proverbe
+            </ul>
+            <ul>
+              Photo 7 :
+              <a
+                class="lien-mention"
+                href="https://unsplash.com/fr/@priscilladupreez?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                >Priscilla Du Preez</a
+              >
+              sur
+              <a href="https://unsplash.com/fr">Unsplash :</a>
+              Timidité
+            </ul>
+          </ul>
+          <a
+            class="lien-mention"
+            href="https://www.flaticon.com/free-icons/white-arrow"
+            title="white arrow icons"
+            >White arrow icons created by Bharat Icons - Flaticon</a
+          ><br>
+          <a class="lien-mention" href="https://app.haikei.app/"
+            >Haikei : Images de fonds</a
+          ><br><br>
+          Les données seront envoyées dans un serveur web, <br>dont le
+          responsable est Philippe Gambette : philippe.gambette@univ-eiffel.fr.
+          <br><br>
+          Développeuse : Néroli Prak
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script type="text/javascript" src="javascript.js"></script>
+</html>

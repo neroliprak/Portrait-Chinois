@@ -1,0 +1,690 @@
+html {
+  scroll-behavior: smooth;
+  background-color: #ffffff00;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #2f2d2b;
+  color: white;
+  margin: 0;
+}
+
+/* Barre de navigation avec le prénom, les liens et la pastille mode jour & nuit */
+
+.navbar {
+  position: sticky;
+  display: flex;
+  background-color: #23252ed9;
+  padding: 1em 0 1em 0;
+  top: 0%;
+  z-index: 20;
+}
+
+.nav-name {
+  margin: auto;
+  cursor: pointer;
+  font-size: 1.25rem;
+  margin-left: 16px;
+  text-decoration: none;
+  color: white;
+}
+
+.liens-internes {
+  margin: auto;
+}
+
+.nav-button > a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-button {
+  border-radius: 3px;
+  border: solid #ff6161 1px;
+  letter-spacing: 0.125rem;
+  padding: 8px;
+  cursor: pointer;
+  color: white;
+  background-color: rgba(255, 255, 255, 0);
+  transition: 0.5s;
+  font-size: 1em;
+}
+
+.nav-button:hover {
+  transition: 0.5s;
+  background-color: #ff6161;
+  border: solid #9c333f 0px;
+  box-shadow: #9c333f 0px 0px 10px 1px, #9c333f 0px 0px 10px 1px;
+  border-radius: 1.5px;
+}
+
+/* Pastille pour changer le mode jour & nuit */
+
+.change-color {
+  width: 40px;
+  height: 20px;
+  border-radius: 30px;
+  border: white solid 2px;
+  background: rgba(255, 255, 255, 0);
+  margin: auto;
+  cursor: pointer;
+}
+
+/* Mode jour */
+
+.switch-light {
+  width: 17px;
+  height: 16px;
+  margin-left: -1px;
+  border-radius: 30px;
+  border: white solid 2px;
+  cursor: pointer;
+  font-size: 0.813rem;
+  background-color: rgb(255, 209, 6);
+}
+
+.light {
+  padding-top: 5px;
+  transition: 0.5s;
+  color: rgb(33, 197, 230);
+  font-weight: bold;
+}
+
+/* Mode nuit */
+
+.switch-night {
+  margin-left: auto;
+  width: 17px;
+  height: 16px;
+  margin-right: -1px;
+  border-radius: 30px;
+  border: white solid 2px;
+  cursor: pointer;
+  font-size: 0.813rem;
+  background-color: #1c44e2;
+}
+
+.night {
+  padding-top: 5px;
+  transition: 0.5s;
+  color: yellow;
+  font-weight: bold;
+}
+
+/* Page d'accueil */
+
+.home-page {
+  display: flex;
+  width: 100vw;
+  text-indent: 6.25rem;
+  padding-top: 70px;
+  background-image: url(./images/Polygon-nuit.png);
+  background-attachment: fixed;
+}
+
+.home-page-jour {
+  display: flex;
+  width: 100%;
+  text-indent: 6.25rem;
+  padding-top: 70px;
+  background-image: url(./images/Polygon.png);
+  background-attachment: fixed;
+}
+
+.title-portrait {
+  font-size: 7rem;
+  margin-top: 40px;
+}
+
+.flottant {
+  animation: floating 6s ease-in-out 0s infinite;
+}
+
+/* Animation flottante */
+
+@keyframes floating {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-35px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* Lettre néon */
+
+.red-neon,
+.white-neon-jour {
+  transition: 1s;
+  cursor: default;
+}
+
+.red-neon:hover {
+  transition: 0s;
+  text-shadow: 0 0 7px #9c333f, 0 0 10px #9c333f, 0 0 42px #ff6161,
+    0 0 77px #ff6161, 0 0 100px #ff6161;
+}
+
+.white-neon-jour:hover {
+  transition: 0s;
+  text-shadow: 0 0 7px #b1d5ff, 0 0 10px #b1d5ff, 0 0 42px #034d92,
+    0 0 77px #034d92, 0 0 100px #034d92;
+}
+
+.subtitle {
+  font-size: 2rem;
+  margin-left: 65px;
+}
+.separation-neon {
+  border-bottom: solid 8px rgb(255, 255, 255);
+  margin-top: 200px;
+  margin-left: 50px;
+  margin-right: 50px;
+  box-shadow: 0 0 7px #9c333f, 0 0 10px #9c333f, 0 0 42px #ff6161,
+    0 0 77px #ff6161, 0 0 100px #ff6161;
+}
+
+/* Les carrés */
+
+.squares {
+  display: flex;
+}
+
+.square-colonne {
+  margin-left: 20px;
+}
+
+.square-colonne > div {
+  margin-bottom: 20px;
+}
+
+.colonne-1 {
+  margin-top: 216px;
+}
+.colonne-2 {
+  margin-top: 20px;
+}
+.colonne-3 {
+  margin-top: 50px;
+}
+
+.forme-square {
+  transition: 1s;
+  width: 176px;
+  height: 176px;
+  font-size: 3.125rem;
+}
+
+.forme-square:hover {
+  transition: 1s;
+  transform: rotate(180deg);
+  font-size: 0rem;
+}
+
+.square-1,
+#div-2 {
+  background-color: #ffa530;
+}
+.square-2,
+#div-1 {
+  background-color: #6f92a2;
+}
+.square-3,
+#div-3 {
+  background-color: #4da1a9;
+}
+.square-4,
+#div-4 {
+  background-color: #a1c084;
+}
+.square-5,
+#div-5 {
+  background-color: #e05263;
+}
+.square-6,
+#div-6 {
+  background-color: #b9a17b;
+}
+.square-7,
+#div-7 {
+  background-color: #90708c;
+}
+
+.square-fluide-768 {
+  transition: ease all 0.5s;
+  display: flex;
+  margin-top: 30px;
+  margin-left: 20px;
+}
+.colonne-fluide {
+  margin-left: 20px;
+}
+.colonne-fluide > div {
+  margin-bottom: 20px;
+}
+.home-page-fluide-768 {
+  display: flex;
+  height: 150vh;
+  width: 100vw;
+  background: linear-gradient(45deg, #2f2d2b, #2f3f4b);
+  text-indent: 6.25rem;
+  padding-top: 70px;
+}
+
+@media (min-width: 1227px) {
+  .square-fluide-768 {
+    display: none;
+  }
+  .home-page-fluide-768 {
+    display: none;
+  }
+  .home-page {
+    height: 100vh;
+  }
+  .squares {
+    margin: auto;
+    margin-bottom: 400px;
+  }
+  .title-portrait {
+    margin-left: auto;
+    margin-right: 0;
+  }
+}
+@media (max-width: 1226px) {
+  .squares {
+    display: none;
+  }
+  .title-portrait {
+    margin: auto;
+  }
+  .down-arrow-fluide {
+    margin-top: 0rem;
+    transition: 0.5s;
+    filter: invert(100%);
+    width: 100px;
+    rotate: 180deg;
+    margin-left: 35px;
+  }
+  .down-arrow-fluide:hover {
+    transition: 0.5s;
+    margin-top: 40px;
+    filter: invert(60%);
+    animation: none;
+  }
+}
+
+@media (max-width: 1250px) {
+  .bloc-portrait {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 900px) {
+  .navbar {
+    font-size: 0.75rem;
+  }
+  .nav-name {
+    font-size: 0.938rem;
+  }
+}
+
+.subtitle-explain {
+  text-indent: 0rem;
+  font-size: 0.938rem;
+  text-align: center;
+  margin-right: 40px;
+  font-weight: lighter;
+  max-width: 80px;
+}
+
+.down-arrow {
+  transition: 0.5s;
+  filter: invert(100%);
+  width: 100px;
+  rotate: 180deg;
+  margin-top: 190px;
+}
+
+.down-arrow:hover {
+  transition: 0.5s;
+  margin-top: 200px;
+  filter: invert(60%);
+  animation: none;
+}
+
+.down-arrow-jour {
+  filter: none;
+}
+.flottant-arrow {
+  animation: floating 2s ease-in-out 0s infinite;
+}
+
+@keyframes flottant-arrow {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* Mise en forme du portrait chinois en JS */
+
+.reponse-portrait {
+  background-color: #1b1b1b;
+  min-height: 100vh;
+  scroll-snap-align: center;
+  background-image: url(./images/Blob.png);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+}
+
+.analogie-portrait {
+  text-align: center;
+  padding-top: 100px;
+  font-size: 3.125rem;
+  font-weight: bold;
+}
+.liste-analogies {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 20px;
+}
+
+.bloc-reponse {
+  display: flex;
+}
+
+.bloc-portrait {
+  display: flex;
+  font-weight: 400;
+  text-align: justify;
+  margin-left: 100px;
+}
+
+.explication-portrait {
+  margin: 100px;
+  text-indent: 2rem;
+  max-width: 1000px;
+  border-left: solid black 3px;
+  padding: 50px;
+}
+
+.analogie-titre {
+  text-shadow: 0 0 7px #939393, 0 0 10px #939393, 0 0 42px #939393,
+    0 0 77px #8e8e8e, 0 0 100px #8e8e8e;
+  background-color: rgb(0, 0, 0);
+  padding: 6px;
+}
+
+.img-portait {
+  margin: auto;
+  width: 100%;
+  max-width: 500px;
+  max-height: 400px;
+}
+
+.valeur {
+  font-weight: 800;
+  font-size: 2.188rem;
+}
+.couleur-analogie {
+  font-size: 3.125rem;
+}
+
+/* Formulaire */
+
+.bloc-formulaire {
+  background-color: #242322;
+  margin-top: 100px;
+  padding-top: 180px;
+  text-align: center;
+  font-weight: lighter;
+}
+
+.formulaire {
+  padding: 70px;
+  background-color: #e05263;
+  margin: auto;
+}
+
+.create-form {
+  background-color: #242322;
+  margin-top: 100px;
+  text-align: center;
+  color: white;
+}
+
+.formulaire {
+  display: flex;
+}
+
+.formulaire-1 {
+  padding: 10px;
+  background-color: #5d6891;
+  margin: auto;
+  height: 100vh;
+  min-height: 87.5rem;
+}
+
+.bouton-formulaire {
+  transition: 1s;
+  font-size: 1.25rem;
+  border: #373737 solid 5px;
+  padding: 40px;
+  z-index: 10;
+  position: absolute;
+  border-radius: 10px;
+  margin-top: 200px;
+  margin-left: -145px;
+  cursor: pointer;
+}
+.bouton-formulaire:hover {
+  transition: 1s;
+  background-color: rgb(255, 164, 164);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.titre-info-perso {
+  font-size: 1.25rem;
+  border-top: solid black 4px;
+}
+
+.creation-portrait {
+  transition: 1s;
+  width: 400px;
+  margin: auto;
+  display: block;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-bottom: 50px;
+  color: black;
+  border-radius: 30px;
+  border: 2 solid #ffffff;
+  filter: blur(0rem);
+  background: linear-gradient(to right, #c6c9fa, #e8c7ec);
+  animation: degrade-couleur 10s ease-in-out 0s infinite;
+  animation: neon 4s ease-in-out 0s infinite;
+}
+
+@keyframes degrade-couleur {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes neon {
+  0% {
+    box-shadow: 0 0 5px #ffffff;
+  }
+
+  50% {
+    box-shadow: 0 0 60px #274f93;
+  }
+
+  100% {
+    box-shadow: 0 0 5px #ffffff;
+  }
+}
+
+#Identifiant,
+#mot_de_passe {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  width: 400px;
+  height: 35px;
+  border: solid 1px #9e9e9e;
+  display: block;
+  margin: auto;
+}
+
+label {
+  display: block;
+  margin: auto;
+  font-size: 1.063rem;
+  font-weight: 400;
+}
+
+#envoyer {
+  transition: 1s;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+  border: none;
+  font-size: 0.938rem;
+  cursor: pointer;
+}
+#envoyer:hover {
+  transition: 1s;
+  background-color: rgb(255, 225, 225);
+}
+
+/* Pied de page : mentions légales - Crédits */
+
+footer {
+  background-color: #151e31;
+  display: flex;
+  padding: 40px;
+  font-size: 0.75rem;
+}
+
+.apparaitre-mention {
+  background-color: #151e31;
+  color: white;
+  z-index: 100;
+  cursor: pointer;
+  margin: auto;
+  font-size: 1.125rem;
+  border: none;
+  transition: 1s;
+  padding: 20px;
+  cursor: help;
+  border-bottom: solid 2 white;
+}
+
+.apparaitre-mention:hover {
+  transition: 0.3s;
+  background-color: #30446f;
+  color: white;
+}
+
+.mentions {
+  margin: auto;
+  text-align: center;
+  color: white;
+  margin-bottom: 40px;
+}
+
+.input-formulaire {
+  border-radius: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 300px;
+  text-align: left;
+  padding-left: 20px;
+  background-color: rgb(255, 255, 255);
+}
+.input-explication {
+  padding-bottom: 100px;
+}
+
+.supp {
+  display: none;
+}
+.blur {
+  filter: blur(4px);
+}
+
+.titre-portrait-formulaire {
+  font-size: 1.875rem;
+  color: #484440;
+}
+
+/* Mentions légales : Pop-up */
+
+.liste-mention {
+  text-align: left;
+  font-size: 1.063rem;
+}
+
+a {
+  color: rgb(150, 218, 255);
+}
+
+.popup {
+  transition: 1s;
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  background-color: rgba(0, 0, 0, 0.753);
+  border-radius: 30px 30px 0px 0px;
+  z-index: 400;
+}
+
+.popup-invisible {
+  display: none;
+}
+
+.liste-mention {
+  color: white;
+  margin-top: 70px;
+}
+
+.cross {
+  margin-right: 400px;
+  padding: 0px 10px 0px 10px;
+  font-size: 1.875rem;
+  background-color: #ff0000;
+  border: solid black 2;
+  border-radius: 13;
+  cursor: pointer;
+}
+
+.haut-popup {
+  border-radius: 30px 30px 0px 0px;
+  padding: 10px;
+  color: white;
+  background-color: #8f1e1ed4;
+}

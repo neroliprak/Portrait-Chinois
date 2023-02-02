@@ -1,0 +1,51 @@
+[
+  {
+    "analogie": "une couleur",
+    "valeur": "le bleu",
+    "img":"./images/Bleu.jpg",
+    "explication": "Bien qu’il ne soit pas ma couleur préférée. Il s’agit avant tout d’une couleur qui, par ces significations, pourrait correspondre à une grande partie de ma personnalité. En effet, on me perçoit souvent comme une personne calme, apaisante, rêveuse et digne de confiance. Ce sont des adjectifs étant associés à la couleur bleue. En plus de cela, le bleu est une couleur très présente dans notre vie de tous les jours comme dans la nature avec le ciel ou l’océan. Elle est aussi très fréquente dans les campagnes de publicité. C’est une couleur assez discrète et qui peut passer partout.",
+    "description" :"Peinture de couleur bleu"
+  },
+  {
+    "analogie": "un compositeur",
+    "valeur": "Ludovico Einaudi",
+    "img":"./images/compositeur.jpg",
+    "explication": "C’est un pianiste italien ayant composé plusieurs bandes originales de films et réalisées des albums. J’ai toujours apprécié les musiques classiques de piano, c’est à travers l’ensemble de ces œuvres que nous ressentons sa passion pour la composition et la musique. Ludovico Einaudi parvient à nous donner un sentiment de liberté, d’envolement, de calme et d’apaisement. En soi, il nous fait ressentir des émotions profondes. Ainsi, c’est un compositeur qui m’inspire beaucoup dans mes projets et cette musique m’aide à me concentrer. ",
+    "description" :"Le compositeur Ludovico Einaudi jouant du piano"
+  },
+  {
+    "analogie": "un moment de la journée",
+    "valeur": "la nuit",
+    "img":"./images/nuit.jpg",
+    "explication": "Parce qu’il s’agit du moment de la journée où je suis la plus productive. Débutant à 21h, c’est le temps parfait pour me concentrer pleinement, puisque c’est le moment le plus calme et silencieux. Ainsi, c’est un moment où beaucoup de personnes apprécient pour travailler. Autre que la productivité, la nuit est propice au sommeil et au repos, elle permet de regagner toute l’énergie perdue la journée. Enfin, je trouve que la nuit est un moment poétique où l’on peut réfléchir sur soi-même. En effet, que ce soit à travers les rêves que l’on fait, l’obscurité de la nuit, les étoiles et le calme, ce sont des éléments qui aident à l’apaisement. ",
+    "description" :"une photo de la lune"
+  },
+  {
+    "analogie": "un sens",
+    "valeur": "l’ouïe",
+    "img":"./images/daredevil.jpg",
+    "explication": "En effet, c’est un sens qui me tient particulièrement à cœur, puisque je suis une personne qui est très à l’écoute de tous. Lors de quelconque conversation, les personnes peuvent compter sur moi pour être attentif à tout leur dit. En plus de cela, je trouve que l’ouïe est un sens très important et que l’on ne peut s’en passer. Le personnage Marvel Daredevil que j’apprécie beaucoup, me fait directement penser au sens de l’ouïe. En effet, il s’agit d’un personnage aveugle depuis son enfance qui parvient à devenir un superhéros, sauvant les citoyens la nuit dans la ville de New York. Rien qu’à son sens de l’ouïe, il est capable de vaincre des ennemies et à être attentif aux moindres détails, lui permettant de se déplacer en toute sécurité. ",
+    "description" :"Une affiche où il y a DareDevil les yeux bandés"
+  },
+  {
+    "analogie": "un instrument de musique",
+    "valeur": "le violon",
+    "img":"./images/violon.jpg",
+    "explication": "Il est très souvent perçu comme l’instrument le plus difficile à jouer et à maîtriser. En effet, le violon contrairement aux autres instruments n’a pas de repères pour trouver les notes justes. Ainsi les bases de cet instrument peuvent prendre des années à bien les maîtriser. Cet instrument regorge de défis à relever à chaque session d’entraînement, il faut avoir la note la plus douce, précis et résonnant. De plus, il requiert un effort physique, même si cela ne se voit pas à première vue, il est nécessaire de coordonner les deux bras et avoir une bonne endurance. Ainsi, je serais le violon puisqu’il est métaphore de persévérance, de patience et de défis. On ne peut s’ennuyer avec cet instrument nous procurant un sentiment de douceur.",
+    "description" :"Une personne jouant du violon"
+  },
+  {
+    "analogie": "un proverbe",
+    "valeur": "« rien ne sert de courir il faut partir à point ». ",
+    "img":"./images/proverbe.jpg",
+    "explication": "Il s’agit d’une morale issue de la Fable « Le Lièvre et la Tortue » de Jean de La Fontaine. Elle nous rappelle qu’il est préférable d’anticiper que de se presser à la dernière minute. En effet, la tortue malgré qu’elle soit lente parvient à gagner la course contre le lièvre. Ce dernier, pensant que la victoire est remportée d’avance, il ne se presse pas et va même papoter avec d’autres animaux. Ainsi, je serais ce proverbe, puisque je préfère anticiper et commencer les projets le plus tôt possible plutôt que de me presser au dernier moment.",
+    "description" :"le lièvre et la tortue qui font la course"
+  },
+  {
+    "analogie": "un défaut",
+    "valeur": "la timidité",
+    "img":"./images/timide.jpg",
+    "explication": "Si j’étais un défaut, je serais la timidité. En effet, il s’agit d’une particularité qui me fait le plus défaut au quotidien. Bien que j’essaie de la travailler, c’est un défaut qui me correspond le mieux actuellement. En effet, cela peut m’empêcher de profiter au maximum des choses de la vie et de pouvoir extérioriser comme je le souhaite. ",
+    "description" :"Personne qui se cache le visage"
+  }
+]
